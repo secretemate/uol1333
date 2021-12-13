@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Rabbit Random Crew</title>
+  <link href="main.bundle.css" rel="stylesheet" type="text/css">
+  <link href="css/custom.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga&amp;display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#777777">
+  <meta name="msapplication-TileColor" content="#999999">
+  <meta name="theme-color" content="#999999">
+  <link rel="stylesheet" type="text/css" href="css/component.css" />
+  <script src="js/modernizr.custom.js"></script>
+	
+    <script>
+        function CD_T(e, t) {
+            var n = new Date;
+            CD_D(+n, e, t), setTimeout("if(typeof CD_T=='function'){CD_T('" + e + "'," + t + ")}", 1100 - n.getMilliseconds())
+        }
+
+        function CD_D(e, t, n) {
+            var o = n - e;
+            o <= 0 && (o *= -1);
+            var a = Math.floor(o / 864e5);
+            o -= 864e5 * a;
+            var i = Math.floor(o / 36e5);
+            o -= 36e5 * i;
+            var r = Math.floor(o / 6e4);
+            o -= 6e4 * r;
+            var d = Math.floor(o / 1e3);
+            CD_OBJS[t] && (CD_OBJS[t].innerHTML = a + " day" + (1 == a ? " " : "s ") + CD_ZP(i) + "h " + CD_ZP(r) + "m " + CD_ZP(d) + "s")
+        }
+
+        function CD_ZP(e) {
+            return e < 10 ? "0" + e : e
+        }
+
+        function CD_Init() {
+            var e = 1;
+            if (document.getElementById || document.all)
+                for (var t = 1; e; ++t) {
+                    var n = "countdown" + t;
+                    if ((e = document.getElementById ? document.getElementById(n) : document.all[n]) && void 0 !== e.innerHTML) {
+                        var o = e.innerHTML,
+                            a = CD_Parse(o);
+                        isNaN(a) ? e.innerHTML = o + '<a href="https://andrewu.co.uk/clj/countdown/" title="Countdown Error:Invalid date format used,check documentation (see link)">*</a>' : (CD_OBJS[n] = e, CD_T(n, a.valueOf()), e.style && (e.style.visibility = "visible"))
+                    }
+                }
+        }
+
+        function CD_Parse(e) {
+            if (e.match(/(\d{4})\-(\d{1,2})\-(\d{1,2})\s+(\d{1,2}):(\d{1,2}):(\d{0,2})\s+GMT([+\-])(\d{1,2}):?(\d{1,2})?/)) {
+                var t = new Date(0);
+                t.setUTCFullYear(+RegExp.$1, +RegExp.$2 - 1, +RegExp.$3), t.setUTCHours(+RegExp.$4, +RegExp.$5, +RegExp.$6);
+                var n = "-" == RegExp.$7 ? -1 : 1,
+                    o = +RegExp.$8,
+                    a = +RegExp.$9;
+                return o && t.setUTCHours(t.getUTCHours() - o * n), a && t.setUTCMinutes(t.getUTCMinutes() - a * n), t
+            }
+            return NaN
+        }
+        var CD_OBJS = new Object;
+        window.attachEvent ? window.attachEvent("onload", CD_Init) : window.addEventListener ? window.addEventListener("load", CD_Init, !1) : window.onload = CD_Init
+    </script>
+</head>
+<body>
+<header class="fixed-top text-white">
+  <div class="navbar"><a class="navbar-brand" href="index.html"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"><span class="toggle-label">Menu</span><span class="toggle-label-close">Close</span><span class="toggle-icon"><span class="line"></span><span class="line"></span></span></button>
+  </div>
+  <ul id="nav">
+    <li class="nav-item active"><a class="nav-link" href="rabbits-crew.com">Home</a></li>
+    <li class="nav-item active"><a class="nav-link" href="rabbits-crew.com/welcome">Welcome</a></li>
+    <li class="nav-item active"><a class="nav-link" href="rabbits-crew.com/roadmap">Roadmap</a></li>
+    <li class="nav-item active"><a class="nav-link" href="rabbits-crew.com/faqs">FAQ's</a></li>
+	<li class="nav-item active"><a class="nav-link" href="rabbits-crew.com/team">Team</a></li>
+    <li class="nav-item"><a class="nav-link" href="rabbits-crew.com/showcase">Showcase</a></li>
+  </ul>
+</header>
+<main>
+      <div class="jumbotron jumbotron-fluid vh-75 d-flex align-items-center bg-dark text-white">
+        <div class="bg o-4" style="background-image:url(img/slide1.png);"></div>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="massive">Mint</h1>
+            </div>
+            <div class="col-12 col-md-7 mx-auto pt-5">
+              <h2 class="o-7">Date 13 Dec 22:00 UTC</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+	   <script src="https://cdn.logwork.com/widget/countdown.js"></script>
+<a href="https://logwork.com/countdown-rddp" class="countdown-timer" data-timezone="Indian/Mahe" data-date="2021-12-14 00:00">⠀⠀⠀⠀⠀</a>
+    <section class="menu" id="menu"></section>	
+    <section class="mint">
+        <div class="container"><br>
+            <script src="./script.js"></script>
+			<div align="center"><img id="imagemint" /></div><noscript>You need to enable JavaScript to run this app.</noscript>
+            <center>
+                <div class="contenedor" style="margin-top:100px">
+                    <div id="root"></div>
+                </div>
+            </center>
+        </div>
+    </section>
+	<div class="container py-5">
+        <h1 align='center'></h1>
+      </div>
+ </main> 
+
+
+    <script>
+        ! function(e) {
+            function t(t) {
+                for (var n, i, a = t[0], c = t[1], l = t[2], s = 0, p = []; s < a.length; s++) i = a[s], Object.prototype.hasOwnProperty.call(o, i) && o[i] && p.push(o[i][0]), o[i] = 0;
+                for (n in c) Object.prototype.hasOwnProperty.call(c, n) && (e[n] = c[n]);
+                for (f && f(t); p.length;) p.shift()();
+                return u.push.apply(u, l || []), r()
+            }
+
+            function r() {
+                for (var e, t = 0; t < u.length; t++) {
+                    for (var r = u[t], n = !0, a = 1; a < r.length; a++) {
+                        var c = r[a];
+                        0 !== o[c] && (n = !1)
+                    }
+                    n && (u.splice(t--, 1), e = i(i.s = r[0]))
+                }
+                return e
+            }
+            var n = {},
+                o = {
+                    1: 0
+                },
+                u = [];
+
+            function i(t) {
+                if (n[t]) return n[t].exports;
+                var r = n[t] = {
+                    i: t,
+                    l: !1,
+                    exports: {}
+                };
+                return e[t].call(r.exports, r, r.exports, i), r.l = !0, r.exports
+            }
+            i.e = function(e) {
+                var t = [],
+                    r = o[e];
+                if (0 !== r)
+                    if (r) t.push(r[2]);
+                    else {
+                        var n = new Promise((function(t, n) {
+                            r = o[e] = [t, n]
+                        }));
+                        t.push(r[2] = n);
+                        var u, a = document.createElement("script");
+                        a.charset = "utf-8", a.timeout = 120, i.nc && a.setAttribute("nonce", i.nc), a.src = function(e) {
+                            return i.p + "static/js/" + ({}[e] || e) + "." + {
+                                3: "8dfcd814"
+                            }[e] + ".chunk.js"
+                        }(e);
+                        var c = new Error;
+                        u = function(t) {
+                            a.onerror = a.onload = null, clearTimeout(l);
+                            var r = o[e];
+                            if (0 !== r) {
+                                if (r) {
+                                    var n = t && ("load" === t.type ? "missing" : t.type),
+                                        u = t && t.target && t.target.src;
+                                    c.message = "Loading chunk " + e + " failed.\n(" + n + ": " + u + ")", c.name = "ChunkLoadError", c.type = n, c.request = u, r[1](c)
+                                }
+                                o[e] = void 0
+                            }
+                        };
+                        var l = setTimeout((function() {
+                            u({
+                                type: "timeout",
+                                target: a
+                            })
+                        }), 12e4);
+                        a.onerror = a.onload = u, document.head.appendChild(a)
+                    }
+                return Promise.all(t)
+            }, i.m = e, i.c = n, i.d = function(e, t, r) {
+                i.o(e, t) || Object.defineProperty(e, t, {
+                    enumerable: !0,
+                    get: r
+                })
+            }, i.r = function(e) {
+                "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
+                    value: "Module"
+                }), Object.defineProperty(e, "__esModule", {
+                    value: !0
+                })
+            }, i.t = function(e, t) {
+                if (1 & t && (e = i(e)), 8 & t) return e;
+                if (4 & t && "object" == typeof e && e && e.__esModule) return e;
+                var r = Object.create(null);
+                if (i.r(r), Object.defineProperty(r, "default", {
+                        enumerable: !0,
+                        value: e
+                    }), 2 & t && "string" != typeof e)
+                    for (var n in e) i.d(r, n, function(t) {
+                        return e[t]
+                    }.bind(null, n));
+                return r
+            }, i.n = function(e) {
+                var t = e && e.__esModule ? function() {
+                    return e.default
+                } : function() {
+                    return e
+                };
+                return i.d(t, "a", t), t
+            }, i.o = function(e, t) {
+                return Object.prototype.hasOwnProperty.call(e, t)
+            }, i.p = "/", i.oe = function(e) {
+                throw console.error(e), e
+            };
+            var a = this["webpackJsonpcandy-machine-mint"] = this["webpackJsonpcandy-machine-mint"] || [],
+                c = a.push.bind(a);
+            a.push = t, a = a.slice();
+            for (var l = 0; l < a.length; l++) t(a[l]);
+            var f = c;
+            r()
+        }([])
+    </script>
+    <script src="main.bundle.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+		<script src="js/jquery.flipshow.js"></script>
+		<script>
+			$( function() {
+				
+				$( '#fc-slideshow' ).flipshow();
+
+			} );
+		</script>
+</body>
+
+</html>
